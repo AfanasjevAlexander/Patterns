@@ -1,0 +1,38 @@
+mod remotes;
+mod device;
+
+use device::{Device, Radio, Tv};
+use remotes::{AdvancedRemote, BasicRemote, HasMutableDevice, Remote};
+
+fn main() {
+    test_device(Tv::default());
+    test_device(Radio::default());
+}
+
+fn test_device(device: impl Device + Clone) {
+    println!("Test with basic remote.");
+    let mut basic_remote = BasicRemote::new(device.clone());
+    basic_remote.power();
+    basic_remote.device().print_status();
+
+    println!("Test with advanced remote.");
+    let mut advanced_remote = AdvancedRemote::new(device);
+    advanced_remote.power();
+    advanced_remote.mute();
+    advanced_remote.device().print_status();
+}
+
+// fn test_device_tv(device: impl Device + Clone) {
+//     println!("Test with basic remote.");
+//     let mut basic_remote = BasicRemote::new(device.clone());
+//     basic_remote.power();
+//     basic_remote.device().print_status();
+// }
+
+// fn test_device_radio(device: impl Device + Clone) {
+//     println!("Test with advanced remote.");
+//     let mut advanced_remote = AdvancedRemote::new(device);
+//     advanced_remote.power();
+//     advanced_remote.mute();
+//     advanced_remote.device().print_status();
+// }
