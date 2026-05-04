@@ -47,5 +47,5 @@ The project is **planning** to organized by language and pattern category (GoF c
 
 ## 📖 Resources
 - [Refactoring.Guru](https://refactoring.guru) — Great visual explanations.
-- [Rust Design Patterns](https://github.io) — Community-driven Rust patterns.
+- [Rust Design Patterns](https://rust-unofficial.github.io/patterns/) — Community-driven Rust patterns.
 
