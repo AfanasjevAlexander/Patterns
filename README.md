@@ -12,7 +12,7 @@ Today the project is organized by language:
 
 ```text
 .
-├── python/                 # Python 3.10+ Implementations
+├── python/                 # Python 3.11+ Implementations
 └── rust/                   # Rust Implementations
 ```
 
@@ -20,7 +20,7 @@ The project is **planning** to organized by language and pattern category (GoF c
 
 ```text
 .
-├── python/                 # Python 3.10+ Implementations
+├── python/                 # Python 3.11+ Implementations
 │   ├── creational/         # Singleton, Factory, Builder...
 │   ├── structural/         # Adapter, Bridge, Proxy...
 │   └── behavioral/         # Strategy, Observer, State...
